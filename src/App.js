@@ -4,6 +4,7 @@ import Room from "./pages/Room";
 import Result from "./pages/Result";
 import background_img from "./images/background.png";
 import "./App.css";
+import Leaderboard from "./pages/Leaderboard";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/room/:id" element={<Room />} />
           <Route path="/result" element={<Result />} />
+          <Route path="/leaderboard" element={<Leaderboard />} />
         </Routes>
       </div>
     </main>

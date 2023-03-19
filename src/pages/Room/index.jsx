@@ -50,7 +50,7 @@ const Room = () => {
         room.players[player_1].score += result.score[0];
         room.players[player_2].score += result.score[1];
 
-        await performAnimation(result.text);
+         await performAnimation(result.text);
 
         room.players[player_1].optionLock = false;
         room.players[player_2].optionLock = false;
@@ -80,8 +80,8 @@ const Room = () => {
     }
   };
 
-  const performAnimation = async (text) => {
-    const timer = (ms) => new Promise((res) => setTimeout(res, ms));
+   const performAnimation = async (text) => {
+   const timer = (ms) => new Promise((res) => setTimeout(res, ms));
 
     for (let i = 0; i <= 8; i++) {
       if (i === 7) {
@@ -100,8 +100,8 @@ const Room = () => {
       }
     }
 
-    return Promise.resolve();
-  };
+     return Promise.resolve();
+   };
 
   return (
     <>
