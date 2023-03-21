@@ -14,7 +14,7 @@ const SocketContextProvider = ({ children }) => {
 
   useEffect(() => {
     // const socket = io(process.env.REACT_APP_SOCKET_URL);
-    const socket = io("localhost:8080");
+    const socket = io("localhost:9000");
     setSocket(socket);
 
     socket.on("room:get", (payload) => {
